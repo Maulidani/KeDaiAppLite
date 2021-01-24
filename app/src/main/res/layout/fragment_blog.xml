@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.BlogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/swipe_refresh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerBlog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabblog"
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabGravity="center">
+
+            </com.google.android.material.tabs.TabLayout>
+            </androidx.viewpager.widget.ViewPager>
+
+<!--            <FrameLayout-->
+
+<!--                android:id="@+id/frametestblog"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+        </LinearLayout>
+
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+</FrameLayout>

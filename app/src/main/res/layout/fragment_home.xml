@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  TODO:   Content  -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bgrev" />
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:id="@+id/slmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat datang di"/>
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/slmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KeDai App Lite"/>
+
+
+                <RelativeLayout
+                    android:layout_below="@+id/img"
+                    android:id="@+id/rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:textColor="@android:color/secondary_text_light"
+                        android:id="@+id/tv_blog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Blog"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+<!--                    <TextView-->
+<!--                        android:textColor="@color/colorPrimaryDark"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/lihat_semua_blog"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_above="@+id/rv_blog"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginRight="27dp"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:text="Lihat semua"-->
+<!--                        android:layout_marginBottom="3dp"-->
+<!--                        android:textStyle="italic"/>-->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_blog"
+                        android:layout_marginBottom="10dp"/>
+<!--                        tools:listitem="@layout/list_blog_home" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/rv1"
+                    android:id="@+id/rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:textColor="@android:color/secondary_text_light"
+                        android:id="@+id/tv_Ebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="E-Book"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+<!--                    <TextView-->
+<!--                        android:textColor="@color/colorPrimaryDark"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/lihat_semua_ebook"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_above="@+id/rv_ebook"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginRight="27dp"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:text="Lihat semua"-->
+<!--                        android:textStyle="italic"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_ebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_Ebook"
+                        android:layout_marginBottom="10dp"/>
+<!--                        tools:listitem="@layout/list_ebook_home" />-->
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

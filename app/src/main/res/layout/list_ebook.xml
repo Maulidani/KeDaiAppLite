@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_ebook"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:layout_marginBottom="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/coverebook"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/ebook_cover_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:textColor="@android:color/secondary_text_light"
+                android:id="@+id/ebook_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/coverebook"
+                android:text="Ebook Title"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:textColor="@android:color/secondary_text_light"
+                android:id="@+id/ebook_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ebook_title"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/coverebook"
+                android:text="deskripsi"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:textColor="@android:color/secondary_text_light"
+                android:id="@+id/ebook_konsentrasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/coverebook"
+                android:text="konsentrasi"
+                android:textSize="10sp" />
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:textColor="@android:color/secondary_text_light"
+                android:id="@+id/ebook_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="dd mm yyyy"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme"
+        android:fontFamily="@font/poppins"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbarebook">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Book"/>
+
+    <ImageView
+        android:onClick="StartDownloading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_download"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
